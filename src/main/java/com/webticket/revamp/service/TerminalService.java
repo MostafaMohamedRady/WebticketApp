@@ -33,4 +33,8 @@ public class TerminalService {
     public List<Terminal> getAllTerminals(){
         return terminalRepository.findAll();
     }
+    
+    public Terminal addTerminal(Terminal terminal){
+        return terminalRepository.save(terminal);
+    }
 }

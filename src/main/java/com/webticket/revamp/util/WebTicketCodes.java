@@ -16,6 +16,7 @@ public class WebTicketCodes {
     public final static String ADMIN_HOME_PAGE = "AdminHome";
     public final static String TECHNICAL_HOME_PAGE = "TechnicalHome";
     public final static String Problem_Submitted_PAGE = "ProblemSubmitted";
+    public final static String ERROR_PAGE = "error";
 
     //Errors Code
     public final static String ADMIN_TAG_ERROR = "ADMIN_TAG_ERROR";

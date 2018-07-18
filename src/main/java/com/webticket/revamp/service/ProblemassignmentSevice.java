@@ -29,4 +29,8 @@ public class ProblemassignmentSevice {
     public Problemassignment submitProblem(Problemassignment problemassignment){
         return repository.save( problemassignment);
     }
+    
+    public Problemassignment getTechTickets(Integer technicalId){
+        return repository.findByMaintenanceListTechnicalId(technicalId);
+    }
 }

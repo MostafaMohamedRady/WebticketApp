@@ -20,9 +20,17 @@ import org.springframework.web.servlet.ModelAndView;
 public class IndexController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-   public String redirect() {
-      return "Login";
-   }
-   
-//   public ModelAndView login()
+    public String loginPage() {
+        return "Login";
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
+    
+    @RequestMapping(value = "/LiveChat", method = RequestMethod.GET)
+    public String liveChatPage(){
+        return "LiveChat";
+    }
 }

@@ -23,9 +23,9 @@ public class VendorAdminService {
     @Transactional
     public String login(String userName, String password) throws Exception {
             VendorAdmin vendorAdmin = repository.findByUserNameAndPassword(userName, password);
-            if (vendorAdmin.getTag().equals(WebTicketCodes.TAG_ADMIN)) {
+            if (vendorAdmin!=null&&vendorAdmin.getTag().equals(WebTicketCodes.TAG_ADMIN)) {
                 return WebTicketCodes.ADMIN_HOME_PAGE;
-            } else if (vendorAdmin.getTag().equals(WebTicketCodes.TAG_TECH)) {
+            } else if (vendorAdmin!=null&&vendorAdmin.getTag().equals(WebTicketCodes.TAG_TECH)) {
                 return WebTicketCodes.TECHNICAL_HOME_PAGE;
             } else {
                 throw new Exception(WebTicketCodes.ADMIN_TAG_ERROR);

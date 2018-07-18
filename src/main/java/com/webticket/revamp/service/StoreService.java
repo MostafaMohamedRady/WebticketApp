@@ -6,6 +6,7 @@
 package com.webticket.revamp.service;
 
 import com.webticket.revamp.doa.StoreRepository;
+import com.webticket.revamp.dto.TotalStoreInfo;
 import com.webticket.revamp.entity.Store;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,10 @@ public class StoreService {
     
     public Store getStoreByStoreName(String storeName){
         return storeRepository.findByStoreNamelike(storeName);
+    }
+    
+    public List<TotalStoreInfo> getTotalStoreInfo(){
+        return storeRepository.findStoreInfo();
     }
 }
 

@@ -5,8 +5,11 @@
  */
 package com.webticket.revamp.doa;
 
+import com.webticket.revamp.dto.TotalStoreInfo;
 import com.webticket.revamp.entity.Store;
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  *
@@ -15,5 +18,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface StoreRepository extends JpaRepository<Store, Integer>{
 
     public Store findByStoreNamelike(String storeName);
+    
+    @Query("select new com.webticket.revamp.dto.TotalStoreInfo(count(s.storeName,s.terminalList),count(s.simList)) from Store s group by s.storeName")
+    public List<TotalStoreInfo> findStoreInfo();
     
 }
