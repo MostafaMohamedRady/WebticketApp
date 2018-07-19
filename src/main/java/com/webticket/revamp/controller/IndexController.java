@@ -5,6 +5,7 @@
  */
 package com.webticket.revamp.controller;
 
+import com.webticket.revamp.util.WebTicketCodes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
@@ -18,7 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class IndexController {
-
+/*
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage() {
         return "Login";
@@ -33,4 +34,24 @@ public class IndexController {
     public String liveChatPage(){
         return "LiveChat";
     }
+    
+    @RequestMapping(value = "/AdminHome", method = RequestMethod.GET)
+    public String adminHomePage(){
+        return WebTicketCodes.PAGE_ADMIN_HOME;
+    }
+    
+     @RequestMapping(value = "/TechnicalIndex", method = RequestMethod.GET)
+    public String technicalIndex(){
+        return WebTicketCodes.PAGE_TechnicalIndex;
+    }
+    
+     @RequestMapping(value = "/MerchantIndex", method = RequestMethod.GET)
+    public String merchantIndex(){
+        return WebTicketCodes.PAGE_MerchantIndex;
+    }
+    
+     @RequestMapping(value = "/StoreIndex", method = RequestMethod.GET)
+    public String storeIndex(){
+        return WebTicketCodes.PAGE_StoreIndex;
+    }*/
 }

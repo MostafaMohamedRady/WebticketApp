@@ -1,27 +1,3 @@
-<%-- 
-    Document   : AdminSideBar
-    Created on : May 23, 2018, 7:39:48 PM
-    Author     : shimaa
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <a href="BootStrap/fonts/glyphicons-halflings-regular.svg"></a>
-    <script src="BootStrap/jquery-1.12.0.min.js" type="text/javascript"></script>
-    <link href="BootStrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
-    <link href="BootStrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="BootStrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link href="BootStrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-    <link href="BootStrap/css/mstyle.css" rel="stylesheet" type="text/css"/>
-    <script src="BootStrap/jquery-1.12.0.min.js" type="text/javascript"></script>
-    <script src="BootStrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="BootStrap/js/npm.js" type="text/javascript"></script>
-    <script src="BootStrap/js/bootstrap.js" type="text/javascript"></script>
-</head>
-
 
 <body>
     <nav id="sidebar">
@@ -33,7 +9,7 @@
         </div>
         <ul class="list-unstyled components">
             <li class="active">
-                <a href="AdminHome.jsp"  >
+                <a href="/WebTicketRevamp/AdminHome">
                     <i class="glyphicon glyphicon-home"></i>
                     Home
                 </a></li>
@@ -44,11 +20,11 @@
                     Accounts
                 </a>
                 <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li><a href="TechnicalIndex.jsp"> Technical</a></li>
-                    <li><a href="MerchantIndex.jsp"> Merchant</a></li>
-                    <li><a href="StoreIndex.jsp"  > Store</a>
+                    <li><a href="/WebTicketRevamp/TechnicalIndex"> Technical</a></li>
+                    <li><a href="/WebTicketRevamp/MerchantIndex"> Merchant</a></li>
+                    <li><a href="/WebTicketRevamp/StoreIndex"  > Store</a>
                     </li>
-                    <li><a href="ChangePassword.jsp">Change Password</a></li>
+                    <li><a href="/WebTicketRevamp/ChangePassword">Change Password</a></li>
                 </ul>
             </li>
             <li>
@@ -57,9 +33,9 @@
                     Terminal
                 </a>
                 <ul class="collapse list-unstyled" id="Terminal">
-                    <li><a href="TerminalIndex.jsp">Terminals</a></li>
-                    <li><a href="DeploymentIndex.jsp">Deployment</a></li>
-                    <li><a href="TerminalUpdate.jsp">Update Deployment </a></li>
+                    <li><a href="/WebTicketRevamp/TerminalIndex">Terminals</a></li>
+                    <li><a href="/WebTicketRevamp/DeploymentIndex">Deployment</a></li>
+                    <li><a href="/WebTicketRevamp/TerminalUpdate">Update Deployment </a></li>
 
                 </ul>
             </li>
@@ -69,7 +45,7 @@
                     SIM
                 </a>
                 <ul class="collapse list-unstyled" id="SIM">
-                    <li><a href="SimIndex.jsp"> SIM </a></li>
+                    <li><a href="/WebTicketRevamp/SimIndex"> SIM </a></li>
                 </ul>
             </li>
             <li>
@@ -78,7 +54,7 @@
                     Roll Paper
                 </a>
                 <ul class="collapse list-unstyled" id="RollPaper">
-                    <li><a href="MerchantRP.jsp">Store to Merchant</a></li>
+                    <li><a href="/WebTicketRevamp/MerchantRP">Store to Merchant</a></li>
                 </ul>
             </li>
             <li>
@@ -87,10 +63,10 @@
                     Tickets
                 </a>
                 <ul class="collapse list-unstyled" id="Tickets">
-                    <li><a href="InboxTickets.jsp">Inbox Tickets</a></li>
-                    <li><a href="AssignTicket.jsp">Assign Ticket</a></li>
-                    <li><a href="TicketsHistory.jsp">Tickets History</a></li>
-                    <li><a href="TicketsMaintenance.jsp">Tickets Maintenance</a></li>
+                    <li><a href="/WebTicketRevamp/InboxTickets">Inbox Tickets</a></li>
+                    <li><a href="/WebTicketRevamp/AssignTicket">Assign Ticket</a></li>
+                    <li><a href="/WebTicketRevamp/TicketsHistory">Tickets History</a></li>
+                    <li><a href="/WebTicketRevamp/TicketsMaintenance">Tickets Maintenance</a></li>
                 </ul>
             </li>
             <li>
@@ -100,8 +76,8 @@
                 </a>
                 <ul class="collapse list-unstyled" id="Withdraw">
 
-                    <li><a href="WithDraw.jsp">Add New Withdraw</a></li>
-                    <li><a href="WithDrawLogs.jsp">WithDraw Logs </a></li>
+                    <li><a href="/WebTicketRevamp/WithDraw">Add New Withdraw</a></li>
+                    <li><a href="/WebTicketRevamp/WithDrawLogs">WithDraw Logs </a></li>
                 </ul>
             </li>
             <li>
@@ -110,15 +86,15 @@
                     Reports
                 </a>
                 <ul class="collapse list-unstyled" id="Reports">
-                    <li><a href="TechnicalReport.jsp.jsp">Technical Report</a></li>
-                    <li><a href="MerchantReport.jsp">Merchant  Report</a></li>
-                    <li><a href="MnReport.jsp">Maintenance Report</a></li>
-                    <li><a href="TicketReport.jsp">Tickets Report</a></li>
-                    <li><a href="WdReport.jsp">Withdraw  Report</a></li>
-                    <li><a href="WithdrawReport.jsp">Store Report</a></li>
-                    <li><a href="SimReport.jsp">SIM Report</a></li>
-                    <li><a href="TerminalReport.jsp">Terminal Report</a></li>
-                    <li><a href="RpReport.jsp">Roll Paper Report</a></li>
+                    <li><a href="/WebTicketRevamp/TechnicalReport">Technical Report</a></li>
+                    <li><a href="/WebTicketRevamp/MerchantReport">Merchant  Report</a></li>
+                    <li><a href="/WebTicketRevamp/MnReport">Maintenance Report</a></li>
+                    <li><a href="/WebTicketRevamp/TicketReport">Tickets Report</a></li>
+                    <li><a href="/WebTicketRevamp/WdReport">Withdraw  Report</a></li>
+                    <li><a href="/WebTicketRevamp/WithdrawReport">Store Report</a></li>
+                    <li><a href="/WebTicketRevamp/SimReport">SIM Report</a></li>
+                    <li><a href="/WebTicketRevamp/TerminalReport">Terminal Report</a></li>
+                    <li><a href="/WebTicketRevamp/RpReport">Roll Paper Report</a></li>
                 </ul>
             </li>
 
